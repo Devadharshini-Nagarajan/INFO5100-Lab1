@@ -9,6 +9,7 @@ import java.text.SimpleDateFormat;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import model.User;
@@ -511,7 +512,8 @@ public class CreateJPanel extends javax.swing.JPanel {
         user.setDegree2Start(dateDegree2Start);
         String dateDegree2End = dateFormat.format(jTextdegree2End.getDate());
         user.setDegree2End(dateDegree2End);
-//        user.setPhoto(jTextphoto.getText()); 
+
+        JOptionPane.showMessageDialog(this, "Information saved successfully!");
     }//GEN-LAST:event_saveBtnActionPerformed
 
     private void jUploadBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jUploadBtnActionPerformed
